@@ -1,3 +1,5 @@
 coviddata = read.table("covid_aggregated.txt")
+png("plot.png")
 plot(coviddata$V1,coviddata$V2)
 lines(coviddata$V1,coviddata$V2)
+dev.off()
